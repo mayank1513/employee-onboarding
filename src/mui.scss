@@ -1,0 +1,16 @@
+.MuiStepper-root {
+  padding: 30px 0 45px;
+}
+
+.MuiGrid-container {
+  gap: 20px;
+}
+
+.MuiContainer-root {
+  min-height: calc(100dvh - 90px);
+}
+
+// JSON form footer
+.MuiContainer-root > div:nth-child(3) > * {
+  margin-left: 15px;
+}

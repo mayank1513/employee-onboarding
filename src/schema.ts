@@ -1,0 +1,131 @@
+export default {
+  type: "object",
+  properties: {
+    firstName: {
+      type: "string",
+      minLength: 3,
+      description: "Please enter your first name",
+    },
+    lastName: {
+      type: "string",
+      minLength: 3,
+      description: "Please enter your last name",
+    },
+    birthDate: {
+      type: "string",
+      format: "date",
+      description: "Please enter your birth date.",
+    },
+    gender: {
+      type: "string",
+      enum: ["Male", "Female", "Other"],
+    },
+    nationality: {
+      type: "string",
+      enum: [
+        "Indian",
+        "German",
+        "Italian",
+        "Japanese",
+        "American",
+        "Russian",
+        "Other",
+      ],
+    },
+    maritalStatus: {
+      type: "string",
+      enum: ["Single", "Married", "Divorced", "Widowed", "Other"],
+    },
+    email: {
+      type: "string",
+      format: "email",
+    },
+    phone: {
+      type: "string",
+      pattern: "^\\d{10}$",
+    },
+    address: {
+      type: "object",
+      properties: {
+        street: {
+          type: "string",
+        },
+        landMark: {
+          type: "string",
+        },
+        city: {
+          type: "string",
+        },
+        state: {
+          type: "string",
+          enum: [
+            "Andhra Pradesh",
+            "Arunachal Pradesh",
+            "Assam",
+            "Bihar",
+            "Chhattisgarh",
+            "Goa",
+            "Gujarat",
+            "Haryana",
+            "Himachal Pradesh",
+            "Jharkhand",
+            "Karnataka",
+            "Kerala",
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Manipur",
+            "Meghalaya",
+            "Mizoram",
+            "Nagaland",
+            "Odisha",
+            "Punjab",
+            "Rajasthan",
+            "Sikkim",
+            "Tamil Nadu",
+            "Telangana",
+            "Tripura",
+            "Uttar Pradesh",
+            "Uttarakhand",
+            "West Bengal",
+          ],
+        },
+        postalCode: {
+          type: "string",
+          maxLength: 6,
+        },
+      },
+    },
+    jobTitle: {
+      type: "string",
+      minLength: 5,
+      maxLength: 50,
+    },
+    department: {
+      type: "string",
+      minLength: 5,
+      maxLength: 50,
+    },
+    startDate: {
+      type: "string",
+      format: "date",
+    },
+    workLocation: {
+      type: "string",
+      enum: ["Onsite", "Remote", "Hybrid"],
+    },
+  },
+  required: [
+    "firstName",
+    "lastName",
+    "birthDate",
+    "gender",
+    "nationality",
+    "maritalStatus",
+    "email",
+    "phone",
+    "address",
+    "jobTitle",
+    "department",
+    "startDate",
+  ],
+};

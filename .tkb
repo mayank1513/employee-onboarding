@@ -1,0 +1,29 @@
+{
+  "scope": "Workspace",
+  "tasks": {
+    "task-rGf5q9FgtX94fuIGIjj4l": {
+      "id": "task-rGf5q9FgtX94fuIGIjj4l",
+      "description": "Create design portfolio",
+      "columnId": "column-todo"
+    }
+  },
+  "columns": [
+    {
+      "id": "column-todo",
+      "title": "To do",
+      "tasksIds": [
+        "task-rGf5q9FgtX94fuIGIjj4l"
+      ]
+    },
+    {
+      "id": "column-doing",
+      "title": "Doing",
+      "tasksIds": []
+    },
+    {
+      "id": "column-done",
+      "title": "Done",
+      "tasksIds": []
+    }
+  ]
+}
