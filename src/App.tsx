@@ -34,12 +34,10 @@ const App = () => {
 
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
-      setShowSplash(false);
-    }, 200);
+    setShowSplash(false);
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 800);
   }, []);
 
   return (
