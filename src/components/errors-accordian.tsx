@@ -1,7 +1,7 @@
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export const ErrorsAccordian = ({ errors }: { errors?: any[] }) => (
+const ErrorsAccordian = ({ errors }: { errors?: any[] }) => (
   <Accordion hidden={!Boolean(errors?.length)}>
     <AccordionSummary expandIcon={<ExpandMoreIcon />}>Errors:</AccordionSummary>
     <AccordionDetails>
@@ -15,3 +15,5 @@ export const ErrorsAccordian = ({ errors }: { errors?: any[] }) => (
     </AccordionDetails>
   </Accordion>
 );
+
+export default ErrorsAccordian;

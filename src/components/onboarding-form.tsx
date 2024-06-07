@@ -7,7 +7,7 @@ import {
 } from "@jsonforms/material-renderers";
 import { Button, Container } from "@mui/material";
 import { createPortal } from "react-dom";
-import { useCallback, useEffect, useState } from "react";
+import { lazy, useCallback, useEffect, useState } from "react";
 import {
   CustomTextControl,
   customTextControlTester,
@@ -15,7 +15,8 @@ import {
   CustomDropdownControl,
 } from "./handle-touched";
 import { useLoader } from "react18-loaders";
-import { ErrorsAccordian } from "./errors-accordian";
+
+const ErrorsAccordian = lazy(() => import("./errors-accordian"));
 
 const renderers = [
   ...materialRenderers,
