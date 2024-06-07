@@ -6,7 +6,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap: false,
-    minify: true,
     rollupOptions: {
       onLog(level, log, handler) {
         if (log.cause) {
