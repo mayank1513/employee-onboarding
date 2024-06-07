@@ -69,6 +69,7 @@ const UIPortfolio = () => {
                   sx={{ width: "400px", height: "250px" }}
                   autoPlay
                   loop
+                  loading="lazy"
                 />
                 <CardContent>
                   <Typography gutterBottom>{card.title}</Typography>
