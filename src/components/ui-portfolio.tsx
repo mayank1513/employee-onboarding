@@ -1,10 +1,8 @@
 // https://youtu.be/ZpfTMKH_fig
 
 import {
-  Button,
   Card,
   CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
   Container,
