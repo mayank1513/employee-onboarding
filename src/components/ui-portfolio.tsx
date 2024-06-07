@@ -1,5 +1,3 @@
-// https://youtu.be/ZpfTMKH_fig
-
 import {
   Card,
   CardActionArea,
