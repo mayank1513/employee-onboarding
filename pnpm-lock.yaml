@@ -39,8 +39,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react18-loaders:
-        specifier: ^1.0.3
-        version: 1.0.3(@types/react@18.3.3)(react@18.3.1)
+        specifier: ^1.1.0
+        version: 1.1.0(@types/react@18.3.3)(react@18.3.1)
       sass:
         specifier: ^1.77.4
         version: 1.77.4
@@ -62,7 +62,7 @@ importers:
         version: 7.12.0(eslint@9.4.0)(typescript@5.4.5)
       '@vitejs/plugin-react-swc':
         specifier: ^3.7.0
-        version: 3.7.0(vite@5.2.12(sass@1.77.4))
+        version: 3.7.0(vite@5.2.13(sass@1.77.4))
       '@vitest/coverage-v8':
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0(sass@1.77.4))
@@ -79,8 +79,8 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
       vite:
-        specifier: ^5.2.12
-        version: 5.2.12(sass@1.77.4)
+        specifier: ^5.2.13
+        version: 5.2.13(sass@1.77.4)
 
 packages:
 
@@ -1618,8 +1618,8 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
 
-  react18-loaders@1.0.3:
-    resolution: {integrity: sha512-pERhHEo4Mfj00+kQAUnrwTT+b4LBhMPgSm7sQhAiFXMq677mi43v639V7Sa0XQ9Fr5BRZgv3cqogxc5QJjHBbg==}
+  react18-loaders@1.1.0:
+    resolution: {integrity: sha512-07gzJMcaNxRsviBLXkAU+6/sm5bXz7kJWY0JMtZlTY0RrAAo2pkDnd7f5IlNQVU2YX1Ab2xj/Fm8zFb4WU6d2Q==}
     peerDependencies:
       '@types/react': 16.8 - 19
       next: 10 - 14
@@ -1798,8 +1798,8 @@ packages:
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
 
-  vite@5.2.12:
-    resolution: {integrity: sha512-/gC8GxzxMK5ntBwb48pR32GGhENnjtY30G4A0jemunsBkiEZFw60s8InGpN8gkhHEkjnRK1aSAxeQgwvFhUHAA==}
+  vite@5.2.13:
+    resolution: {integrity: sha512-SSq1noJfY9pR3I1TUENL3rQYDQCFqgD+lM6fTRAM8Nv6Lsg5hDLaXkjETVeBt+7vZBCMoibD+6IWnT2mJ+Zb/A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2630,10 +2630,10 @@ snapshots:
       '@typescript-eslint/types': 7.12.0
       eslint-visitor-keys: 3.4.3
 
-  '@vitejs/plugin-react-swc@3.7.0(vite@5.2.12(sass@1.77.4))':
+  '@vitejs/plugin-react-swc@3.7.0(vite@5.2.13(sass@1.77.4))':
     dependencies:
       '@swc/core': 1.5.25
-      vite: 5.2.12(sass@1.77.4)
+      vite: 5.2.13(sass@1.77.4)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -3436,7 +3436,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react18-loaders@1.0.3(@types/react@18.3.3)(react@18.3.1):
+  react18-loaders@1.1.0(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       '@types/react': 18.3.3
       r18gs: 1.0.2(@types/react@18.3.3)(react@18.3.1)
@@ -3592,7 +3592,7 @@ snapshots:
       debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.2.12(sass@1.77.4)
+      vite: 5.2.13(sass@1.77.4)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -3603,7 +3603,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite@5.2.12(sass@1.77.4):
+  vite@5.2.13(sass@1.77.4):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
@@ -3631,7 +3631,7 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.8.0
       tinypool: 0.8.4
-      vite: 5.2.12(sass@1.77.4)
+      vite: 5.2.13(sass@1.77.4)
       vite-node: 1.6.0(sass@1.77.4)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
