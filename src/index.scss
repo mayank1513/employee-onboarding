@@ -15,6 +15,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-snap-type: y proximity;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -58,11 +62,58 @@ button:focus-visible {
 .header {
   padding: 5px 20px;
   text-align: center;
-  box-shadow: 0 0 5px currentColor;
+  box-shadow: 0 3px 3px currentColor;
+  margin-bottom: 15px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(3px);
+  z-index: 100;
 }
 
 .header h1 {
   font-size: 2rem;
+  margin: 10px 0;
+}
+
+.cards {
+  gap: 100px;
+  place-content: center;
+  padding: 50px;
+  img,
+  video {
+    border-bottom: 1px solid currentColor;
+  }
+  .MuiCard-root {
+    box-shadow: 0 0 10px currentColor;
+  }
+}
+
+.snap {
+  scroll-snap-align: center;
+}
+
+.down-btn {
+  display: block;
+  overflow: hidden;
+  height: 24px;
+  margin: 20px auto;
+  span {
+    display: inline-block;
+    transform: rotate(90deg);
+    animation: 0.75s indicator infinite linear;
+    background: linear-gradient(to right, #3b82f6, #ef4444);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes indicator {
+  from {
+    transform: rotate(90deg) translateX(-150%);
+  }
+  to {
+    transform: rotate(90deg) translateX(150%);
+  }
 }
 
 @media (prefers-color-scheme: light) {

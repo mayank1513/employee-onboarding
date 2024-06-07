@@ -1,0 +1,28 @@
+.container {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+h1.title {
+  border-radius: var(--border-radius);
+  background: linear-gradient(to right, #3b82f6, #ef4444);
+  background-clip: text;
+  // background-size: 200%;
+  color: transparent;
+  width: fit-content;
+  margin: auto !important;
+  padding: 8px;
+  font-size: 3rem !important;
+  text-shadow: none;
+  font-weight: bold;
+  // animation: 2s txt infinite linear;
+}
+
+@keyframes txt {
+  from {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: -100% 50%;
+  }
+}
