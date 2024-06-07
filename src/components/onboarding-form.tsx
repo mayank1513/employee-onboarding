@@ -5,13 +5,7 @@ import {
   materialCells,
   materialRenderers,
 } from "@jsonforms/material-renderers";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Button,
-  Container,
-} from "@mui/material";
+import { Button, Container } from "@mui/material";
 import { createPortal } from "react-dom";
 import { useCallback, useEffect, useState } from "react";
 import {
@@ -21,7 +15,7 @@ import {
   CustomDropdownControl,
 } from "./handle-touched";
 import { useLoader } from "react18-loaders";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { ErrorsAccordian } from "./errors-accordian";
 
 const renderers = [
   ...materialRenderers,
@@ -93,20 +87,7 @@ const OnboardingForm = () => {
           </Button>,
           formButtonsEl
         )}
-      <Accordion hidden={!Boolean(errors?.length)}>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          Errors:
-        </AccordionSummary>
-        <AccordionDetails>
-          <pre>
-            {JSON.stringify(
-              errors?.map((error) => error.message),
-              null,
-              2
-            )}
-          </pre>
-        </AccordionDetails>
-      </Accordion>
+      <ErrorsAccordian errors={errors} />
     </Container>
   );
 };
