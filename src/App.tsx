@@ -37,7 +37,7 @@ const App = () => {
     setShowSplash(false);
     setTimeout(() => {
       setLoading(false);
-    }, 800);
+    }, 900);
   }, []);
 
   return (
