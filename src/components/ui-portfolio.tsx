@@ -48,7 +48,7 @@ const cards: CardProps[] = [
   },
 ];
 
-export default function UIPortfolio() {
+const UIPortfolio = () => {
   return (
     <div className="snap" id="ui-portfolio">
       <header className="header">
@@ -87,4 +87,6 @@ export default function UIPortfolio() {
       </Container>
     </div>
   );
-}
+};
+
+export default UIPortfolio;

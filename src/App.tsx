@@ -19,7 +19,7 @@ const srollToUiPortfolio = () => {
 const UIPortfolio = lazy(() => import("./components/ui-portfolio"));
 const OnboardingForm = lazy(() => import("./components/onboarding-form"));
 
-function App() {
+const App = () => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [showSplash, setShowSplash] = useState(true);
   const { setLoading } = useLoader();
@@ -34,10 +34,12 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    setShowSplash(false);
+    setTimeout(() => {
+      setShowSplash(false);
+    }, 200);
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 500);
   }, []);
 
   return (
@@ -57,6 +59,6 @@ function App() {
       </LoaderContainer>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

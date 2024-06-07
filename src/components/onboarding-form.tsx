@@ -30,7 +30,7 @@ const renderers = [
   { tester: customDropdownControlTester, renderer: CustomDropdownControl },
 ];
 
-export default function OnboardingForm() {
+const OnboardingForm = () => {
   const uischema = useUischema();
   const [data, setData] = useState({});
   const [errors, setError] = useState<any[]>();
@@ -109,4 +109,6 @@ export default function OnboardingForm() {
       </Accordion>
     </Container>
   );
-}
+};
+
+export default OnboardingForm;
