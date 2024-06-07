@@ -1,11 +1,9 @@
 import { FC, useEffect, useState } from "react";
 import { withJsonFormsControlProps } from "@jsonforms/react";
 import {
+  Autocomplete,
   FormControl,
   FormHelperText,
-  InputLabel,
-  MenuItem,
-  Select,
   TextField,
 } from "@mui/material";
 import {
@@ -78,19 +76,15 @@ const CustomDropdown: FC<CustomTextControlProps> = (props) => {
 
   return (
     <FormControl fullWidth required={required} error={!isValid && touched}>
-      <InputLabel>{label}</InputLabel>
-      <Select
+      <Autocomplete
+        options={schema.enum}
         value={data || ""}
-        onChange={(event) => handleChange(path, event.target.value)}
+        onChange={(_event, value) => handleChange(path, value)}
         onBlur={handleBlur}
-        label={label}
-      >
-        {schema.enum.map((option: string) => (
-          <MenuItem key={option} value={option}>
-            {option}
-          </MenuItem>
-        ))}
-      </Select>
+        renderInput={(params) => (
+          <TextField {...params} label={label} error={!isValid && touched} />
+        )}
+      />
       <FormHelperText>{touched ? errors : null}</FormHelperText>
     </FormControl>
   );
