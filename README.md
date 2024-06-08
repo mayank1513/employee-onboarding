@@ -1,11 +1,18 @@
-# React + TypeScript + Vite
+# JsonForms + MaterialUI renderers Demo with React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pros
 
-Currently, two official plugins are available:
+- Excellent UI
+- Quick to build
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Cons
+
+- Requires patching up for most common need such as not showing error message until touched
+- Difficult to get great lighthouse scores as ton of JS runs to render the UI
+
+> Managed to get 99% performance score for Desktop - [Pagespeed Insights](https://pagespeed.web.dev/analysis/https-employee-onboarding-livid-vercel-app/hr80zu0o4p?form_factor=desktop)
+
+# Chore
 
 ## Expanding the ESLint configuration
 
@@ -17,12 +24,12 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
