@@ -70,6 +70,8 @@ const UIPortfolio = () => {
                   autoPlay
                   loop
                   loading="lazy"
+                  playsinline 
+                  muted
                 />
                 <CardContent>
                   <Typography gutterBottom>{card.title}</Typography>
