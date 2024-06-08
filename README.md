@@ -1,11 +1,15 @@
 # JsonForms + MaterialUI renderers Demo with React + TypeScript + Vite
 
-## Pros
+> Supports system color-scheme preference. Dark/Light theme is automatically applied.
+
+## JSONForm + MaterialUI
+
+### Pros
 
 - Excellent UI
 - Quick to build
 
-## Cons
+### Cons
 
 - Requires patching up for most common need such as not showing error message until touched
 - Difficult to get great lighthouse scores as ton of JS runs to render the UI
